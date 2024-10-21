@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Easy - Meal Planner</title>
+    <link rel="stylesheet" href="styles/planner.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Eat Easy Logo">
+                <h1>Eat Easy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planner.html" class="active">Meal Planner</a></li>
+                    <li><a href="calculator.html">Nutritional Calculator</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="signin.html" class="button">Sign In</a>
+                <a href="signup.html" class="button signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="meal-planner">
+            <h2>Plan Your Meal</h2>
+            <form id="planner-form">
+                <div class="form-group">
+                    <label for="meal-time">Select Meal Time:</label>
+                    <select id="meal-time" name="meal-time" required>
+                        <option value="" disabled selected>Select a meal time</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="snacks">Snacks</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="meal-type">Select Meal Type:</label>
+                    <select id="meal-type" name="meal-type" required>
+                        <option value="" disabled selected>Select a meal type</option>
+                        <option value="veg">Vegetarian</option>
+                        <option value="non-veg">Non-Vegetarian</option>
+                    </select>
+                </div>
+                <button type="submit">Get Meal Suggestions</button>
+                <button type="button" id="clear-button">Clear</button>
+            </form>
+            <div id="suggestions" style="display:none;">
+                <h3>Meal Suggestions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Meal Time</th>
+                            <th>Meal Type</th>
+                            <th>Suggestions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="suggestions-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Eat Easy is dedicated to helping you plan nutritious meals effortlessly. Our mission is to make healthy eating simple, enjoyable, and accessible for everyone.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planner.html">Meal Planner</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@eateasy.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Healthy Way, Food City, USA</p>
+            </div>
+    
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eat Easy. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="back-to-top" class="back-to-top" title="Back to top">↑</button>
+
+    <script src="scripts/planner.js"></script>
+</body>
+</html>

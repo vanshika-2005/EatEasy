@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Easy - Nutritional Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Eat Easy Logo">
+                <h1>Eat Easy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planner.html">Meal Planner</a></li>
+                    <li><a href="calculator.html" class="active">Nutritional Calculator</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="signin.html" class="button">Sign In</a>
+                <a href="signup.html" class="button signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <main class="calculator-container">
+            <section class="health-score">
+                <div class="health-score-content">
+                    <h4>Modified: Corn, Avocado & Tomato Salad</h4>
+                    <div class="score-details">
+                        <div class="score-indicator">
+                            <p>High</p>
+                            <p>Medium</p>
+                            <p>Low</p>
+                        </div>
+                        <div class="score-bar">
+                            <div class="score-bar-fill"></div>
+                        </div>
+                        <div class="score-value">
+                            <p>Health Score</p>
+                            <h2>8.5 <span>/10</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="nutrition-info">
+                <h4>Nutrition per serving</h4>
+                <div class="nutrition-details">
+                    <table>
+                        <tr>
+                            <td>Calories</td>
+                            <td>251kcal</td>
+                            <td>16%</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>20.8g</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbs</td>
+                            <td>10.35g</td>
+                            <td>13%</td>
+                        </tr>
+                        <tr>
+                            <td>Sugars</td>
+                            <td>2.95g</td>
+                            <td>8%</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>8.2g</td>
+                            <td>16%</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium</td>
+                            <td>415mg</td>
+                            <td>29%</td>
+                        </tr>
+                        <tr>
+                            <td>Fiber</td>
+                            <td>6.13g</td>
+                            <td>13%</td>
+                        </tr>
+                    </table>
+                    <p class="daily-values">Percent Daily Values based on a 2,000 calorie diet.</p>
+                </div>
+            </section>
+    
+            <div class="decorative-elements">
+                <img src="images/tomato.png" alt="Tomato" class="decorative-tomato">
+                <img src="images/avocado.png" alt="Avocado" class="decorative-avocado">
+               
+            </div>
+            
+        </main>
+    </body>
+
+    <footer id="main-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Eat Easy is dedicated to helping you plan nutritious meals effortlessly. Our mission is to make healthy eating simple, enjoyable, and accessible for everyone.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planner.html">Meal Planner</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@eateasy.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Healthy Way, Food City, USA</p>
+            </div>
+    
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eat Easy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" title="Back to top">↑</button>
+
+    <script src="scripts/calculator.js"></script>
+    
+</body>
+</html>
