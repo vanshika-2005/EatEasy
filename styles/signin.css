@@ -88,7 +88,12 @@ nav ul li a.active {
 .auth-buttons .button:hover {
     opacity: 0.9;
 }
-
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
 
 .signin-container {
     max-width: 900px;
