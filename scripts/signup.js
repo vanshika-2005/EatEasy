@@ -1,5 +1,30 @@
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const name = document.getElementById('name').value;
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
 
-// Get the back-to-top button
+    if (localStorage.getItem('email') === email) {
+        errorMessage.style.display = 'block'; 
+        successMessage.style.display = 'none'; 
+    } else {
+       
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);
+        localStorage.setItem('name', name);
+        
+        successMessage.style.display = 'block'; 
+        errorMessage.style.display = 'none'; 
+       
+        document.getElementById('signupForm').reset();
+    }
+});
+
+
+
 const backToTopButton = document.getElementById('back-to-top');
 
 
